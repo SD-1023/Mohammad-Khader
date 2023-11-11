@@ -1,0 +1,137 @@
+:root{
+    --left-side-wdith:50%;
+}
+
+/* Start if course description */
+.special-container{
+    width: 55%;
+    margin-inline: 22.5%;
+}
+.course-description-section{
+    background-color: #333333;
+    color: #EDEDED;
+    padding-block: 30px;
+    
+}
+.course-description-section .titles{
+    margin-bottom: 10px;
+}
+.titles p{
+    color: var(--brand-secondary);
+}
+.course-description-section .special-container{
+    position: relative;
+    
+}
+.course-description-section button{
+    background-color: var(--brand-secondary);
+    outline: 0px;
+    border: 0px;
+}
+.course-description-section .course-description-text{
+    width: var(--left-side-wdith);
+}
+.course-description-section .course-info{
+    color:black;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    border: 1px solid white;
+    width: 40%;
+    background-color: white;
+}
+.course-info img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-color: white;
+}
+.course-info button{
+    color: white;
+    padding-inline: 12px;
+    padding-block: 8px;
+    width: 100%;
+    margin-block: 10px;
+}
+.course-info .course-info-text-container{
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+.course-info a{
+    text-decoration: underline;
+    color: blue;
+    font-weight: 400;
+}
+.course-info .add-to-fav-box{
+    margin-block: 10px;
+    padding: 15px;
+    border: 1px solid #EDEDED;
+}
+.add-to-fav-box button:hover{
+    cursor: pointer;
+}
+.course-info .credits-status{
+    text-align: center;
+    font-size: 12px;
+    color: #DDDDDD;
+}
+
+/* End of course description */
+
+/* Start fi sub-topics */
+.sub-topics{
+    padding-top: 30px;
+    background-color: var(--bg_body);
+}
+
+.sub-topics ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-topics-table{
+    
+    width: var(--left-side-wdith);
+}
+.sub-topics ul li{
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+.sub-topics ul li , .sub-topics h4{
+    padding-inline: 20px;
+    padding-block: 10px;
+    color: var(--body-text);
+    background-color: var(--bg_body);
+    border: 1px solid var(--lines-color);
+    border-bottom: 0px;
+}
+.sub-topics h4{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.sub-topics ul li:last-of-type{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: 1px solid var(--lines-color);
+}
+
+.sub-topics ul li p{
+    margin-left: 5px;
+}
+.sub-topics ul li .circle-checkMark{
+    color: var(--brand-secondary);
+}
+.sub-topics small{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 25px;
+    width:calc( var(--left-side-wdith) + 6px);
+}
+.sub-topics small [name="heart"]{
+    color: var(--heart-color);
+    margin-inline: 4px;
+}
+/* End of sub topics */

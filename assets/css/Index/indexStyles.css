@@ -1,0 +1,138 @@
+:root{
+    --cards-gap: 30px;
+    --cards-md-gap:20px;
+    --cards-lg-gap:24px;
+    /* Controls the gap size between cards! */
+}
+/* Start of main */
+
+/* Temporarly */
+main {
+    min-height: 150vh;  
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 12px;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 4px var(--lines-color);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.search > *{
+    background-color: var(--bg_default);
+    height: 53px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+.search .input-part{
+    width: 70%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+.search .input-part label{
+    display: flex;
+    align-items: center;
+}
+.search [name="search-outline"]:hover{
+    cursor: pointer;
+}
+
+.search .sort-filter-parts{
+    width: 15%;
+    border-left: 1px solid var(--lines-color);
+    padding-inline:8px;
+    padding-top: 5px; 
+}
+
+.drop-down {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.drop-down:hover{
+    cursor: pointer;
+}
+
+.numOfTopics{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    row-gap: 30px;
+    padding-inline: -200px;
+}
+.cards.container {
+    width: calc( 90% + var(--cards-oneside-empty-space));
+    margin-inline: calc( 5% - var(--cards-gap) / 2);
+}
+.card-container{
+    width: 20%;
+    padding-inline:calc( var(--cards-gap) / 2);
+}
+.card{
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: var(--bg_default);
+    box-shadow: 0px 0px 10px var(--lines-color);
+
+    transition: 0.6s;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.card-text-container{
+    margin-block: 15px;
+    margin-inline: 15px;
+}
+.card .titles{
+    margin-bottom: 35px;
+}
+.card img{
+    background-color: white;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.card .course-desc {
+    text-overflow: ellipsis !important;
+    white-space:nowrap;
+    overflow: hidden;
+    font-weight: 400;
+}
+.card .course-name {
+    font-weight: 700;
+}
+
+.card .author{
+    margin-top: 10px;
+}
+
+/* end of Main */
+
