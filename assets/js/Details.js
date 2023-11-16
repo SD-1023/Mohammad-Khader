@@ -15,9 +15,7 @@ window.onload = ()=>{
     imgOfCourse.src = img_src;
     author_Name.textContent = author;
     course_Name.forEach((e)=>{
-        e.textContent = name_;
-        console.log(e)
-        
+        e.textContent = name_; 
     })
     course_title.textContent = desc;
     setColorMode()

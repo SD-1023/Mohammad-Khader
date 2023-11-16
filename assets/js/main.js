@@ -76,8 +76,12 @@ cards.forEach((e)=>{
         let src = e.querySelector("img").src;
         let desc = e.querySelector(".course-desc").textContent;
         let author_name = e.querySelector(".author").textContent.replace("Author: ","");
-        let course_name = e.querySelector(".course-name").textContent;
-        window.location.href = `${window.location.href}Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`
+        let course_name = e.querySelector(".course-name").textContent
+        if(window.location.href.includes("index.html")){
+            window.location.href = `${window.location.href.replace("index.html","")}Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`
+        }else{
+            window.location.href = `${window.location.href}Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`
+        }
     }
 })
 
