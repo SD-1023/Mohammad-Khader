@@ -12,15 +12,19 @@
     <title>Index</title>
   </head>
   <body>
+    
+    
     <nav class="navbar">
         <div class="container">
             <div class="brand">
-                <a href="index.html">Web Topics</a>
+                <h2>
+                    <a href="index.html">Web Topics</a>
+                </h2>
             </div>
             <div>
                 <ul>
-                    <li class="nav-link color-mode-btn dark-mode"><button> <ion-icon name="moon-outline"></ion-icon><span class="nav-link-text">Dark Mode</span></button></li>
-                    <li class="nav-link favBtn"><button> <ion-icon name="heart-outline"></ion-icon> <span class="nav-link-text">Favourites</span></button></li>
+                    <li class="nav-link color-mode-btn dark-mode"><button> <ion-icon class="nav-icons" name="moon-outline"></ion-icon><span class="nav-link-text">Dark Mode</span></button></li>
+                    <li class="nav-link favBtn"><button> <ion-icon class="nav-icons" name="heart-outline"></ion-icon> <span class="nav-link-text">Favourites</span></button></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +34,7 @@
     <header class="header">
         <div class="container">
             <div class="header-text">
-                <h1>Welcome to our Website!</h1>
+                <h1>Welcome to our website!</h1>
                 <p>We have a new design that's fresh, modern, and easy to use.</p>
             </div>
         </div>
@@ -49,13 +53,13 @@
             <div class="search">
                 <div class="input-part">
                     <label for="search-input">
-                        <ion-icon name="search-outline"></ion-icon>
+                        <ion-icon class="search-icon" name="search-outline"></ion-icon>
                     </label>
-                    <input id="search-input" placeholder="Search the Website..."/>
+                    <input id="search-input" placeholder="Search the website..."/>
                 </div>
 
-                <div class="sort-filter-parts">
-                    <span>
+                <div class="sort-filter-parts sort-part">
+                    <span class="filter-sort-by">
                         Sort by:
                     </span>
 
@@ -68,8 +72,8 @@
                 </div>
 
                 <div class="sort-filter-parts">
-                    <span>
-                        Sort by:
+                    <span class="filter-sort-by">
+                        Filter by:
                     </span>
 
                     <div class="drop-down">
@@ -94,7 +98,9 @@
                             </div>
 
                             <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
+                                <li>
+                                    <ion-icon name="star"></ion-icon>
+                                </li>
                                 <li><ion-icon name="star"></ion-icon></li>
                                 <li><ion-icon name="star"></ion-icon></li>
                                 <li><ion-icon name="star"></ion-icon></li>
@@ -224,13 +230,13 @@
 
     <section class="my-favourite">
         <div class="container">
-            <h5>My Favourite Topics</h5>
+            <h4>My Favourite Topics</h4>
             <div class="fav-cards">
                 <div class="fav-card-container">
                     <div class="fav-card">
                         <img src="./assets/img/Courses/react.webp" alt="" class="img-fluid">
                         <div class="fav-card-text-container">
-                            <h6 class="fav-course-name">React</h6>
+                            <h5 class="fav-course-name">React</h5>
                             <ul>
                                 <li><ion-icon name="star"></ion-icon></li>
                                 <li><ion-icon name="star"></ion-icon></li>
@@ -246,7 +252,7 @@
                     <div class="fav-card">
                         <img src="./assets/img/Courses/cloud.jpeg" alt="" class="img-fluid">
                         <div class="fav-card-text-container">
-                            <h6 class="fav-course-name">Cloud Compuss</h6>
+                            <h5 class="fav-course-name">Cloud Compuss</h5>
                             <ul>
                                 <li><ion-icon name="star"></ion-icon></li>
                                 <li><ion-icon name="star"></ion-icon></li>
@@ -261,6 +267,8 @@
         </div>
         
     </section>
+    
+    
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

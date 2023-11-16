@@ -1,0 +1,218 @@
+
+@media (min-width: 0px) and (max-width:575px){
+    .special-container{
+        width: var(--container-md);
+        min-width: auto;
+        margin-inline:calc( (100% - var(--container-md)) / 2);
+    }
+    /* Course desc text */
+    .course-description-section .course-description-text{
+        width: var(--left-side-wdith-sm);
+    }
+    /* End of Course desc text */
+
+    /* Start of cousre info */
+    
+
+    .course-description-section .course-description-text {
+        padding-bottom: 160px;
+    }
+    
+    .course-description-section .course-info{
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: -42%;
+        min-width: 350px;
+        display: flex;
+        margin-inline: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .course-info .course-info-text-container{
+        padding-inline: 10px;
+        padding-block: 5px;
+    }
+    .course-info .add-to-fav-box{
+        margin-block: 0px;
+        padding: 8px;
+    }
+
+    .course-info img {
+        height: 150px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-position: center center;
+    }
+
+    /* End of Course info */
+
+    /* Start of sub topic */
+    .sub-topics{
+        padding-top: 170px;
+        background-color: var(--bg_body);
+        padding-bottom: 30px;
+    }
+
+    .sub-topics-table{
+        width: var(--left-side-wdith-sm);
+    }
+
+    .sub-topics small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    /* End of sub topics */
+
+}
+
+@media (min-width: 576px) and (max-width:767px){
+    .special-container{
+        width: var(--container-md);
+        min-width: auto;
+        margin-inline:calc( (100% - var(--container-md)) / 2);
+    }
+    /* Course desc text */
+    .course-description-section .course-description-text{
+        width: var(--left-side-wdith-sm);
+    }
+    /* End of Course desc text */
+
+    /* Start of cousre info */
+    
+
+    .course-description-section .course-description-text {
+        padding-bottom: 160px;
+    }
+    
+    .course-description-section .course-info{
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: -42%;
+        min-width: 350px;
+        display: flex;
+        margin-inline: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .course-info .course-info-text-container{
+        padding-inline: 10px;
+        padding-block: 5px;
+    }
+    .course-info .add-to-fav-box{
+        margin-block: 0px;
+        padding: 8px;
+    }
+
+    .course-info img {
+        height: 150px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-position: center center;
+    }
+
+    /* End of Course info */
+
+    /* Start of sub topic */
+    .sub-topics{
+        padding-top: 170px;
+        background-color: var(--bg_body);
+        padding-bottom: 30px;
+    }
+
+    .sub-topics-table{
+        width: var(--left-side-wdith-sm);
+    }
+
+    .sub-topics small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    /* End of sub topics */
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .special-container{
+            width: var(--container-md);
+            min-width: auto;
+            margin-inline:calc( (100% - var(--container-md)) / 2);
+    }
+    /* Start of course info */
+    .course-description-section .course-info{
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: -40%;
+        width: 73%;
+        min-width: 680px;
+        height: 200px;
+        overflow: hidden;
+        margin-inline: auto;
+    }
+    
+    .course-description-section .course-info {
+        display: flex;
+    }
+    .course-info img {
+        width: 60%;
+    }
+
+    .course-info .course-info-text-container{
+        padding-left: 20px;
+        
+    }
+    /* End of Course info */
+
+    /* Start of desc text */
+
+    /* Course desc text */
+    .course-description-section .course-description-text{
+        width: var(--left-side-wdith-sm);
+    }
+    .course-description-section .course-description-text {
+        padding-bottom: 105px;
+    }
+    /* End of Course desc text */
+
+    /* End of desc text */
+
+    /* Start of sub topic */
+    .sub-topics{
+        padding-top: 100px;
+        background-color: var(--bg_body);
+        padding-bottom: 30px;
+    }
+
+    .sub-topics-table{
+        width: var(--left-side-wdith-sm);
+    }
+
+    .sub-topics small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    /* End of sub topics */
+}
+
+@media (min-width: 993px) and (max-width: 1199px){
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    
+}
+
+@media (min-width: 1400px){
+    
+}
+
+
+    
+

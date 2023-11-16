@@ -1,3 +1,15 @@
+/* scroll for page */
+body::-webkit-scrollbar {
+    width: 0.6vw;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--bg_default);
+}
+body::-webkit-scrollbar-track{
+    box-shadow: 0px 0px 12px var(--body-text) inset;
+}
+
 /* Start of Navbar */
 .navbar .container{
     display: flex;
@@ -5,10 +17,10 @@
 }
 .container {
     width: 90%;
-    margin-inline: 5%;
+    margin-inline: auto;
 }
 .navbar{
-    padding-block:14px;
+    padding-block:16px;
     background-color: var(--bg_default);
 }
 .nav-link { 
@@ -23,6 +35,8 @@
 }
 .navbar a{
     color: var(--brand-primary);
+    font-size: 18px;
+    opacity: 0.8;
 }
 
 .nav-link > *{
@@ -39,6 +53,7 @@
 .nav-link button {
     background-color: transparent;
     line-height: 16px;
+    font-family:'Nunito Sans', sans-serif;
 }
 .nav-link.color-mode-btn button {
     margin-right: 10px;
@@ -52,6 +67,11 @@
 .nav-link-text{
     margin-left: 5px;
     line-height: 16px;
+}
+
+.nav-icons{
+    font-size: 16px;
+    --ionicon-stroke-width: 42px;
 }
 
 /* End of Navbar */
@@ -121,18 +141,27 @@ h1{
     transition: 0.8s;
 }
 .my-favourite.active {
-    max-height:20%;
+    max-height:226px;
     padding-block: 10px;
 }
 .fav-cards{
     margin-top: 10px;
     display: flex;
     column-gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-inline: 11px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+}
+.fav-cards >*{
+    flex-shrink: 0;
 }
 .fav-card{
     border-radius: 8px;
     box-shadow: 0px 0px 11px var(--lines-color);
     overflow: hidden;
+    margin-bottom: 6px;
 }
 .fav-card img{
     width: 100%;
@@ -145,4 +174,18 @@ h1{
 .fav-card-text-container{
     padding-inline:5px;
 }
+
+/* Scroll bar for favourite */
+.fav-cards::-webkit-scrollbar {
+    height: 2vw;
+    border-radius: 10px;
+}
+.fav-cards::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--body-text);
+}
+.fav-cards::-webkit-scrollbar-track{
+    box-shadow: 0px 0px 12px var(--bg_default) inset;
+}
+
 /* End of my favorite */

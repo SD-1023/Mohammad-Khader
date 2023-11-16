@@ -15,6 +15,22 @@
     --body-text:#333333;
     --heart-color:#DC143C;
     font-family: 'Nunito Sans', sans-serif;
+    --container-xl:90%;
+    --container-lg:92%;
+    --container-md:95%;
+    --container-sm:97%;
+    /* --font-size-header-level-one-xl: ;
+    --font-size-header-level-one-lg: ;
+    --font-size-header-level-one-md: ;
+    --font-size-header-level-one-sm: ;
+
+    --font-size-header-level-two-xl: ;
+    --font-size-header-level-two-lg: ;
+    --font-size-header-level-two-md: ;
+    --font-size-header-level-two-sm: ; */
+    --cards-gap: 30px;
+    --cards-md-gap:20px;
+    --cards-lg-gap:24px;
 }
 .img-fluid{
     width:100%;
