@@ -77,12 +77,7 @@ cards.forEach((e)=>{
         let desc = e.querySelector(".course-desc").textContent;
         let author_name = e.querySelector(".author").textContent.replace("Author: ","");
         let course_name = e.querySelector(".course-name").textContent;
-        console.log(window.location.hash)
-        console.log(window.location.href)
-        console.log(window.location.origin)
-        console.log(window.location.pathname)
-        //console.log(window.location.href = window.location.href + `/Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`)
-        //window.location.href = `/Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`;
+        window.location.href = `${window.location.href}Details.html?src=${src}&desc=${desc}&author=${author_name}&name=${course_name}`
     }
 })
 
