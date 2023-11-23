@@ -30,22 +30,22 @@
     </nav>
     
 
-    <header class="header">
+    <banner class="banner">
         <div class="container">
-            <div class="header-text">
+            <div class="banner-text">
                 <h1>Welcome to our website!</h1>
                 <p>We have a new design that's fresh, modern, and easy to use.</p>
             </div>
         </div>
 
-        <div class="bg-left-side">
+        <div class="bg-banner bg-left-side">
 
         </div>
 
-        <div class="bg-right-side">
+        <div class="bg-banner bg-right-side">
 
         </div>
-    </header>
+    </banner>
 
     <section class="course-description-section">
         <div class="special-container">
@@ -69,10 +69,18 @@
                 </p>
             </div>
 
-            <div class="course-info">
+            <div class="course-info large-screens">
                 <img src="./assets/img/Courses/javascript.jpg" alt="">
                 <div class="course-info-text-container">
-                    <h4><span class="course-name">HTML</span> by <a href="" class="course-info-author">Sarah Smith</a></h4>
+                    <div class="course-credits">
+                        <h4 class="course-info-name">
+                                <span title="HTML" class="course-name text-wrapper">HTML</span>  
+                        </h4>
+                        <div class="author-section">
+                            <span class="by-span">by</span>
+                            <a href="#" class="course-info-author">Sarah Smith</a>
+                        </div>
+                    </div>
                     <div class="add-to-fav-box">
                         <p>Interested about this topic?</p>
                         <button>
@@ -82,6 +90,33 @@
                         <p class="credits-status">Unlimited Credits</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="special-container">
+            <div class="course-info small-screens">
+            <img src="./assets/img/Courses/javascript.jpg" alt="">
+            <div class="course-info-text-container">
+                <div class="course-credits">
+                    <h4 class="course-info-name">
+                            <span title="HTML" class="course-name text-wrapper">HTML</span>  
+                    </h4>
+                    <div class="author-section">
+                        <span class="by-span">by</span>
+                        <a href="#" class="course-info-author">Sarah Smith</a>
+                    </div>
+                </div>
+                <div class="add-to-fav-box">
+                    <p>Interested about this topic?</p>
+                    <button>
+                        <span>Add to Favourites</span>
+                        <ion-icon class="add-to-fav-icon" name="heart-outline"></ion-icon>
+                    </button>
+                    <p class="credits-status">Unlimited Credits</p>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -116,11 +151,6 @@
                         <p>HTML accessibility and semantic markup</p>
                     </li>
                 </ul>
-            </div>
-            <div>
-                <small>
-                    <span>Developed with</span> <ion-icon name="heart"></ion-icon> &#169; 2023
-                </small>
             </div>
         </div>
     </section>
@@ -164,6 +194,12 @@
         </div>
         
     </section>
+
+    <footer class="footer">
+        <small>
+            <span>Developed with</span> <ion-icon name="heart"></ion-icon> &#169; 2023
+        </small>
+    </footer>
     
 
 

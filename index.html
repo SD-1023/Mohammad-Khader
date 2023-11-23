@@ -31,22 +31,22 @@
     </nav>
     
 
-    <header class="header">
+    <banner class="banner">
         <div class="container">
-            <div class="header-text">
+            <div class="banner-text">
                 <h1>Welcome to our website!</h1>
                 <p>We have a new design that's fresh, modern, and easy to use.</p>
             </div>
         </div>
 
-        <div class="bg-left-side">
+        <div class="bg-banner bg-left-side">
 
         </div>
 
-        <div class="bg-right-side">
+        <div class="bg-banner bg-right-side">
 
         </div>
-    </header>
+    </banner>
 
     <main>
         <div class="container">
@@ -59,29 +59,40 @@
                 </div>
 
                 <div class="sort-filter-parts sort-part">
-                    <span class="filter-sort-by">
+                    <label for="sort" class="filter-sort-by">
                         Sort by:
-                    </span>
-
-                    <div class="drop-down">
-                        <p>Default</p>
-                        <span>
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                        </span>
-                    </div>
+                    </label>
+                    <select id="sort" class="drop-down selector">
+                        <option>Default</option>
+                        <option>Courses names A to Z</option>
+                        <option>Courses Rating</option>
+                        <option>Author name A to Z</option>
+                    </select>
                 </div>
 
                 <div class="sort-filter-parts">
-                    <span class="filter-sort-by">
-                        Filter by:
-                    </span>
 
-                    <div class="drop-down">
-                        <p>Default</p>
-                        <span>
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                        </span>
-                    </div>
+                    <label for="filter" class="filter-sort-by">
+                        Filter by:
+                    </label>
+
+                    <select id="filter" class="drop-down selector">
+                        <option>Default</option>
+                        <optgroup label="Topic Name">
+                            <option>Web Development Languages</option>
+                            <option>Frontend Frameworks and Libraries</option>
+                            <option>Backend Frameworks and Libraries</option>
+                            <option>Database and APIS</option>
+                            <option>Web Development Concepts and Technologies</option>
+                        </optgroup>
+                        <optgroup label="Rating at is equal to or more">
+                            <option>1 star at least</option>
+                            <option>2 stars at least</option>
+                            <option>3 stars at least</option>
+                            <option>4 stars at least</option>
+                            <option>5 stars at least</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
 
@@ -90,139 +101,943 @@
             <div class="cards container">
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/html.png" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Web Development Languages</h3>
-                                <h3 class="course-name">HTML</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/html.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Languages</h2>
+                                    <h3 class="course-name">HTML</h3>
+                                </div>
+
+
+                                <ul class="course-rating" style="width:77px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+
+                                <p class="author">Author: Sarah Smith</p>
                             </div>
-
-                            <ul>
-                                <li>
-                                    <ion-icon name="star"></ion-icon>
-                                </li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
-
-                            <p class="author">Author: Sarah Smith</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/css.webp" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Web Development Languages</h3>
-                                <h3 class="course-name">CSS</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/css.webp" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Languages</h2>
+                                    <h3 class="course-name">CSS</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:69px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: David Lee</p>
                             </div>
-
-                            <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
-
-                            <p class="author">Author: David Lee</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/javascript.jpg" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Web Development Languages</h3>
-                                <h3 class="course-name">Javascript</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/javascript.jpg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Languages</h2>
+                                    <h3 class="course-name">Javascript</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:77px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Emily Chen</p>
                             </div>
-
-                            <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
-
-                            <p class="author">Author: Emily Chen</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/jquery.png" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Frontend Frameworks and Libraries</h3>
-                                <h3 class="course-name">jQuery</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/jquery.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Frontend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">jQuery</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:77px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: John Johnson</p>
                             </div>
-
-                            <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
-
-                            <p class="author">Author: John Johnson</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/angular.png" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Frontend Frameworks and Libraries</h3>
-                                <h3 class="course-name">Angular</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/angular.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Frontend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Angular</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:70px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Jessica Davis</p>
                             </div>
-
-                            <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
-
-                            <p class="author">Author: Jessica Davis</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./assets/img/Courses/react.webp" alt="computer with HTML screen background" class="img-fluid">
-                        <div class="card-text-container">
-                            <div class="titles">
-                                <h3 class="course-desc">Frontend Frameworks and Libraries</h3>
-                                <h3 class="course-name">React</h3>
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/react.webp" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Frontend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">React</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:73px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Daniel Brown</p>
                             </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- React above -->
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/vuejs.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Frontend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Vue.js</h3>
+                                </div>
 
-                            <ul>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star"></ion-icon></li>
-                                <li><ion-icon name="star-outline"></ion-icon></li>
-                            </ul>
+                                <ul class="course-rating" style="width:68px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
 
-                            <p class="author">Author: Daniel Brown</p>
-                        </div>
+                                <p class="author">Author: Ava Jones</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/nodejs.webp" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Backend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Node.js</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Michael Kim</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/expressjs.webp" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Backend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Express.js</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Sophia Rodriguez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/ruby.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Backend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Ruby on Rails</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:58px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: William Lee</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/django.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Backend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Django</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Olivia Martinez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/flask.webp" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Backend Frameworks and Libraries</h2>
+                                    <h3 class="course-name">Flask</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:58px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Ethan Thompson</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/sql.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Databases and APIS</h2>
+                                    <h3 class="course-name">SQL</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:85px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Madison Davis</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/nosql.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Databases and APIS</h2>
+                                    <h3 class="course-name">NoSQL</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:86px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Isabella Wilson</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/restapi.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Databases and APIS</h2>
+                                    <h3 class="course-name">REST APIs</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:58px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Jacob Garcia</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/graphql.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Databases and APIS</h2>
+                                    <h3 class="course-name">GraphQL</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:73px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Mia Brown</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/oauth.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">OAuth</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:68px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Evelyn Nguyen</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/json.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">JSON</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:68px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Liam Hernanez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/ajax.gif" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">AJAX</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:68px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Avery Perez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/websockets.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Websockets</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:73px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Victoria Kim</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/responsive.gif" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Responsive Design</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:73px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Ryan Jones</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/accessibility.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Accessibility</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:73px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Samantha Martin</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/ux.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">User Experience (UX)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Luke Davis</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/ui.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">User Interface (UI)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:58px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Grace Wilson</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/design-systems.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Design Systems</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Noah Martinez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/performance.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Performance Optimization</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Chloe Taylor</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/cross-browser.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Cross-Browser Compatibility</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:80px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Chloe Taylor</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cross borwser compa above -->
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/seo.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Search Engine Optimization (SEO)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:80px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Emily Kim</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/web-security.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Web Security</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:80px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Gabriel Hernandez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/testing.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Testing and Debugging</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:86px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Avery Perez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/ci-cd.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Continuous Integration/Continuous Delivery</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:80px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Madison Davis</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/devops.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">DevOps</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:82px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Isabella Wilson</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/cloud.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Cloud Computing</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:84px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Jacob Garcia</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/docker.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Docker</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Mia Brown</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/microservices.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Microservices</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:71px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Evelyn Neguyen</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/pwa.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Progressive Web Apps (PWA)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:58px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Liam Hernandez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/wai.jpeg" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Web Accessibility Initiative (WAI)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:69px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Avery Perez</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/cms.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Content Management System (CMS)</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Victoria Kim</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="Details.html">
+                            <img src="./assets/img/Courses/analytics.png" alt="computer with HTML screen background" class="img-fluid">
+                            <div class="card-text-container">
+                                <div class="titles">
+                                    <h2 class="course-desc">Web Development Concepts and Technologies</h2>
+                                    <h3 class="course-name">Web Analytics</h3>
+                                </div>
+
+                                <ul class="course-rating" style="width:74px;">
+                                    <li><ion-icon star-num="1" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="2" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="3" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="4" name="star-outline"></ion-icon></li>
+                                    <li><ion-icon star-num="5" name="star-outline"></ion-icon></li>
+                                </ul>
+
+                                <p class="author">Author: Ryan Jones</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         
@@ -267,6 +1082,12 @@
         </div>
         
     </section>
+
+    <footer class="footer">
+        <small>
+            <span>Developed with</span> <ion-icon name="heart"></ion-icon> &#169; 2023
+        </small>
+    </footer>
     
     
 

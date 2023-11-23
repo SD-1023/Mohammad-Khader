@@ -4,20 +4,20 @@ const author_Name = courseInfo.querySelector(".course-info .course-info-author")
 const course_Name = document.querySelectorAll(".course-name");
 const course_title = document.querySelector(".course-title");
 
-const urlParams = new URLSearchParams(window.location.search);
+// const urlParams = new URLSearchParams(window.location.search);
 
-const img_src = urlParams.get("src");
-const author = urlParams.get("author");
-const desc = urlParams.get("desc");
-const name_ = urlParams.get("name")
+// const img_src = urlParams.get("src");
+// const author = urlParams.get("author");
+// const desc = urlParams.get("desc");
+// const name_ = urlParams.get("name")
 
 window.onload = ()=>{
-    imgOfCourse.src = img_src;
-    author_Name.textContent = author;
-    course_Name.forEach((e)=>{
-        e.textContent = name_; 
-    })
-    course_title.textContent = desc;
+    // imgOfCourse.src = img_src;
+    // author_Name.textContent = author;
+    // course_Name.forEach((e)=>{
+    //     e.textContent = name_; 
+    // })
+    // course_title.textContent = desc;
     setColorMode()
 }
 

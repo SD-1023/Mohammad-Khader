@@ -1,9 +1,12 @@
-
+:root{
+    --responsive-course-info-height:200px;
+}
 @media (min-width: 0px) and (max-width:575px){
     .special-container{
         width: var(--container-md);
         min-width: auto;
         margin-inline:calc( (100% - var(--container-md)) / 2);
+        padding-left: 0px;
     }
     /* Course desc text */
     .course-description-section .course-description-text{
@@ -12,12 +15,6 @@
     /* End of Course desc text */
 
     /* Start of cousre info */
-    
-
-    .course-description-section .course-description-text {
-        padding-bottom: 160px;
-    }
-    
     .course-description-section .course-info{
         left: 50%;
         transform: translateX(-50%);
@@ -39,17 +36,47 @@
     }
 
     .course-info img {
-        height: 150px;
+        /* height: 150px; */
+        height: 173px;
         width: 100%;
         aspect-ratio: 16/9;
         object-position: center center;
     }
 
+    .course-info button{
+        padding-block: 8px;
+        font-size: 17px;
+    }
+    .course-info button ion-icon{
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    .course-info.small-screens {
+        display: flex;
+    }
+    .course-info.large-screens {
+        display: none;
+    }
+
+    .course-description-section .course-description-text{
+        padding-bottom: 170px;
+    }
+    .course-info.small-screens .course-credits {
+        margin-block: 3px;
+    }
+    .course-info.small-screens{
+        min-width: auto;
+        width: 350px;
+        margin-top: -174px;
+        display: flex;
+        margin-inline: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
     /* End of Course info */
 
     /* Start of sub topic */
     .sub-topics{
-        padding-top: 170px;
         background-color: var(--bg_body);
         padding-bottom: 30px;
     }
@@ -65,7 +92,9 @@
         margin-inline: auto;
     }
     /* End of sub topics */
-
+    .footer small{
+        padding-left: 0%;
+    }
 }
 
 @media (min-width: 576px) and (max-width:767px){
@@ -73,6 +102,7 @@
         width: var(--container-md);
         min-width: auto;
         margin-inline:calc( (100% - var(--container-md)) / 2);
+        padding-left: 0px;
     }
     /* Course desc text */
     .course-description-section .course-description-text{
@@ -80,19 +110,17 @@
     }
     /* End of Course desc text */
 
-    /* Start of cousre info */
-    
-
-    .course-description-section .course-description-text {
-        padding-bottom: 160px;
+    /* Start of cousre info */ 
+    .course-description-section .course-description-text{
+        padding-bottom: 70px;
     }
-    
-    .course-description-section .course-info{
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
-        bottom: -42%;
-        min-width: 350px;
+    .course-info.small-screens .course-credits {
+        margin-block: 3px;
+    }
+    .course-info.small-screens{
+        min-width: auto;
+        width: 350px;
+        margin-top: -174px;
         display: flex;
         margin-inline: auto;
         flex-direction: column;
@@ -108,17 +136,33 @@
     }
 
     .course-info img {
-        height: 150px;
+        height: 173px;
         width: 100%;
         aspect-ratio: 16/9;
         object-position: center center;
+    }
+    .course-info button{
+        padding-block: 8px;
+        font-size: 17px;
+    }
+    .course-info button ion-icon{
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    .course-info.small-screens {
+        display: flex;
+    }
+    .course-info.large-screens {
+        display: none;
+    }
+    .course-description-section {
+        padding-bottom: calc( 30px + var(--responsive-course-info-height) /2 );
     }
 
     /* End of Course info */
 
     /* Start of sub topic */
     .sub-topics{
-        padding-top: 170px;
         background-color: var(--bg_body);
         padding-bottom: 30px;
     }
@@ -134,29 +178,38 @@
         margin-inline: auto;
     }
     /* End of sub topics */
+    .footer small{
+        padding-left: 0%;
+    }
 }
 
 @media (min-width: 768px) and (max-width:992px){
     .special-container{
-            width: var(--container-md);
-            min-width: auto;
-            margin-inline:calc( (100% - var(--container-md)) / 2);
+        width: var(--container-md);
+        min-width: auto;
+        margin-inline:calc( (100% - var(--container-md)) / 2);
+        padding-left: 0px;
     }
     /* Start of course info */
-    .course-description-section .course-info{
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
-        bottom: -40%;
-        width: 73%;
-        min-width: 680px;
-        height: 200px;
-        overflow: hidden;
-        margin-inline: auto;
-    }
     
-    .course-description-section .course-info {
-        display: flex;
+    .course-info.small-screens{
+        width: fit-content;
+        justify-content: center;
+        min-width: 669px;
+        height: var(--responsive-course-info-height);
+        margin-inline: auto;
+        margin-top: calc( -1 * var(--responsive-course-info-height) / 2 );
+    }
+    .course-description-section {
+        padding-bottom: calc( 30px + var(--responsive-course-info-height) /2 );
+    }
+    .course-info button{
+        padding-block: 8px;
+        font-size: 17px;
+    }
+    .course-info button ion-icon{
+        font-size: 25px;
+        margin-left: 5px;
     }
     .course-info img {
         width: 60%;
@@ -174,8 +227,12 @@
     .course-description-section .course-description-text{
         width: var(--left-side-wdith-sm);
     }
-    .course-description-section .course-description-text {
-        padding-bottom: 105px;
+
+    .course-info.small-screens {
+        display: flex;
+    }
+    .course-info.large-screens {
+        display: none;
     }
     /* End of Course desc text */
 
@@ -183,7 +240,6 @@
 
     /* Start of sub topic */
     .sub-topics{
-        padding-top: 100px;
         background-color: var(--bg_body);
         padding-bottom: 30px;
     }
@@ -199,10 +255,18 @@
         margin-inline: auto;
     }
     /* End of sub topics */
+    .footer small{
+        padding-left: 0%;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1199px){
-    
+    .special-container{
+        padding-left: 0px;
+    }
+    .course-description-section .course-info{
+        right: 0px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px){

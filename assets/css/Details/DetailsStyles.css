@@ -1,5 +1,5 @@
 :root{
-    --left-side-wdith:50%;
+    --left-side-wdith:62%;
     --left-side-wdith-sm:100%;
 }
 
@@ -9,6 +9,7 @@
     width: 55%;
     min-width: 920px;
     margin-inline: auto;
+    padding-left: 64px;
 }
 
 .course-description-section{
@@ -27,7 +28,7 @@
     position: relative;
     
 }
-.course-description-section button{
+.course-info button{
     background-color: var(--brand-secondary);
     outline: 0px;
     border: 0px;
@@ -41,14 +42,20 @@
 .course-description-section [name="star"] ,.course-description-section [name="star-half-outline"],.course-description-section [name="star-outline"]{
     font-size: 15px;
 }
+
 .course-description-section .course-info{
     color:black;
     position: absolute;
-    right: 50px;
+    right: -25px;
     top: 0px;
     border: 1px solid white;
-    width: 40%;
+    width: 35%;
     background-color: white;
+}
+.course-info.small-screens{
+    display: none;
+    border: 1px solid white;
+    color:#333333;
 }
 .course-info h4{
     overflow: hidden;
@@ -63,9 +70,19 @@
 .course-info button{
     color: white;
     padding-inline: 12px;
-    padding-block: 8px;
+    padding-block: 14px;
     width: 100%;
     margin-block: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+}
+
+.course-info button ion-icon{
+    font-size: 30px;
+    margin-left: 10px;
 }
 .course-info .course-info-text-container{
     background-color: white;
@@ -76,6 +93,36 @@
     text-decoration: underline;
     color: blue;
     font-weight: 400;
+}
+.course-info .course-info-name {
+    display: flex;
+    flex-direction: row;
+    max-width: calc( 100% - 106px);
+}
+
+.course-info .text-wrapper {
+    display: -webkit-box;
+    text-overflow:ellipsis;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.course-credits .author-section {
+    display: flex;
+}
+.course-credits {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.course-info .by-span{
+    margin-inline: 5px;
+    flex-shrink: 0;
+}
+.course-info .course-info-author{
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 .course-info .add-to-fav-box{
     margin-block: 10px;
@@ -88,7 +135,7 @@
 .course-info .credits-status{
     text-align: center;
     font-size: 12px;
-    color: #DDDDDD;
+    color: #aaaaaa;
 }
 
 /* End of course description */
@@ -97,7 +144,7 @@
 .sub-topics{
     padding-top: 30px;
     background-color: var(--bg_body);
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .sub-topics ul {
@@ -113,17 +160,23 @@
     align-items: center;
     padding-inline: 20px;
 }
+.sub-topics ul li ion-icon{
+    flex-shrink: 0;
+    font-size:20px;
+    margin-right: 10px;
+}
 .sub-topics ul li , .sub-topics h4{
     padding-inline: 20px;
     padding-block: 10px;
     color: var(--body-text);
-    background-color: var(--bg_body);
+    background-color: var(--bg_default);
     border: 1px solid var(--lines-color);
     border-bottom: 0px;
 }
 .sub-topics h4{
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    font-size: 20px;
 }
 .sub-topics ul li:last-of-type{
     border-bottom-left-radius: 6px;
@@ -137,15 +190,11 @@
 .sub-topics ul li .circle-checkMark{
     color: var(--brand-secondary);
 }
-.sub-topics small{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-top: 25px;
-    width:calc( var(--left-side-wdith) + 6px);
-}
-.sub-topics small [name="heart"]{
-    color: var(--heart-color);
-    margin-inline: 4px;
-}
 /* End of sub topics */
+
+/* Start of footer */
+.footer small{
+    margin: auto;
+    padding-left: 7.6%;
+}
+/* End of footer */

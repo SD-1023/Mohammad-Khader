@@ -76,8 +76,8 @@ body::-webkit-scrollbar-track{
 
 /* End of Navbar */
 
-/* Start of Header */
-.header{
+/* Start of banner */
+.banner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ body::-webkit-scrollbar-track{
     position: relative;
     overflow:hidden;
 }
-.header .header-text{
+.banner .banner-text{
     display: flex;
     flex-direction: column;
     left: 52%;
@@ -99,10 +99,12 @@ h1{
     color:var(--brand-secondary);
     font-size: 22px;
 }
-.bg-left-side{
+.bg-banner{
     position: absolute;
-    left: -100px;
     top: -40%;
+}
+.bg-left-side{
+    left: -100px;
     height: 69%;
     width: 110%;
     background:linear-gradient(to right,var(--brand-primary) 11%,var(--brand-secondary));
@@ -110,8 +112,6 @@ h1{
     z-index: 3;
 }
 .bg-right-side{
-    position: absolute;
-    top: -40%;
     height: 80px;
     width: 100%;
     right: -100px;
@@ -189,3 +189,21 @@ h1{
 }
 
 /* End of my favorite */
+
+/* Start of footer */
+.footer{
+    text-align: center;
+}
+.footer small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width:calc( var(--left-side-wdith) + 6px);
+    padding-bottom: 30px;
+}
+.footer small [name="heart"]{
+    color: var(--heart-color);
+    margin-inline: 4px;
+}
+/* End of Footer */
