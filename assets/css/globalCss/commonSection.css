@@ -131,6 +131,7 @@ h1{
 .my-favourite{
     display: flex;
     position: fixed;
+    z-index: 5;
     width: 100%;
     bottom: 0px;
     left: 0px;
@@ -201,9 +202,11 @@ h1{
     margin-top: 25px;
     width:calc( var(--left-side-wdith) + 6px);
     padding-bottom: 30px;
+    font-size: 15px;
 }
 .footer small [name="heart"]{
     color: var(--heart-color);
     margin-inline: 4px;
+    font-size: 22px;
 }
 /* End of Footer */

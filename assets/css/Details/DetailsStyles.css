@@ -99,17 +99,19 @@
     flex-direction: row;
     max-width: calc( 100% - 106px);
 }
-
-.course-info .text-wrapper {
+.text-limiter{
     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.course-info .text-wrapper {
     text-overflow:ellipsis;
     -webkit-line-clamp: 1;
-    overflow: hidden;
     line-clamp: 1;
-    -webkit-box-orient: vertical;
 }
 .course-credits .author-section {
     display: flex;
+    
 }
 .course-credits {
     display: flex;
@@ -123,6 +125,9 @@
 .course-info .course-info-author{
     white-space: nowrap;
     flex-shrink: 0;
+    max-width:106px;
+    text-overflow: ellipsis;
+    display: block;
 }
 .course-info .add-to-fav-box{
     margin-block: 10px;
@@ -195,6 +200,7 @@
 /* Start of footer */
 .footer small{
     margin: auto;
-    padding-left: 7.6%;
+    padding-left: 6.2%;
+    letter-spacing: 0.5px;
 }
 /* End of footer */

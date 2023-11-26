@@ -25,6 +25,10 @@
         font-size: 18px;
     }
 
+    .selector::-webkit-scrollbar {
+        width: 1.2vw;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width:767px){
@@ -58,6 +62,10 @@
 
     .numOfTopics{
         font-size: 22px;
+    }
+
+    .selector::-webkit-scrollbar {
+        width: 1vw;
     }
  
 }

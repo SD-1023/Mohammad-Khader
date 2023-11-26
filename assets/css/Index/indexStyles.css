@@ -54,7 +54,17 @@ main {
     background-color: var(--bg_default);
     border-bottom: 0px;
 }
-
+.selector::-webkit-scrollbar {
+    width: 0.6vw;
+}
+.selector::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--bg_default);
+}
+.selector::-webkit-scrollbar-track{
+    box-shadow: 0px 0px 12px var(--body-text) inset;
+    background-color: var(--lines-color);
+}
 .search .input-part{
     width: 70%;
     padding: 12px;
@@ -209,4 +219,10 @@ main {
     left: calc( var(--single-star-size) * 4 + var(--stars-offset));
 }
 /* end of Main */
+
+/* Start of footer */
+.footer small{
+    margin-top: 5px;
+}
+/* End of footer */
 
